@@ -13,7 +13,7 @@ public class Average {
         double avg = (x + y + z) / 3;
         System.out.println(avg);
 
-        double halfAvg = (avg - avg % 2) / 2;
+        double halfAvg = Math.floor(avg / 2);
 
         if (halfAvg > 3)
             System.out.println("Программа выполнена корректно");
