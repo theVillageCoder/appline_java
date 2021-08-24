@@ -19,8 +19,8 @@ public class Riddle {
                 System.out.println("Правильно!");
                 break;
             } else if (answer.equals("подсказка")) {
-                i += 2;
                 System.out.println("Это вирус, но какой же он?");
+                i += 2;
                 continue;
             } else if (i == 0 || i == 1) {
                 System.out.println("Подумай еще!");
@@ -28,8 +28,8 @@ public class Riddle {
                 continue;
             } else {
                 System.out.println("Обидно, приходи в другой раз");
-                break;
             }
+            i++;
         }
     }
 }
